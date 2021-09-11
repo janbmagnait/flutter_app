@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import './question.dart';
 
+import './answer.dart';
+
 // void main() {
 //   runApp(MyApp());
 // }
@@ -43,20 +45,9 @@ void _answerQuestion() {
             Question(
               questions[_questionIndex]
             ),
-            RaisedButton(
-              child: Text('Answer 1'),
-              onPressed: _answerQuestion,
-            ),
-            RaisedButton(
-              child: Text('Answer 2'),
-              onPressed: () => print('Answer 2 chosen'),
-            ),
-            RaisedButton(
-              child: Text('Answer 3'),
-              onPressed: () {
-                print('Answer 3 chosen!');
-              },
-            ),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
           ],
         ),
       ),
