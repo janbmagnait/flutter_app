@@ -12,6 +12,7 @@ class Answer extends StatelessWidget {
       child: RaisedButton(
               child: Text('Answer 1'),
               color: Colors.blue,
+              textColor: Colors.white,
               onPressed: selectHandler,
             ),
     );
